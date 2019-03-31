@@ -19,8 +19,9 @@ export default class About extends Component {
             <div>
                 <Layout title="About Page">
                     <p>JS Programmer</p>
-                    {JSON.stringify(this.state.user)}
-                    <img src="static/js-logo.png" alt="Java Script Logo"></img>
+                    {/* {JSON.stringify(this.state.user)} */}
+                    {/* <img src="static/js-logo.png" alt="Java Script Logo"></img> */}
+                    <img src={this.state.user ? this.state.user.avatar_url : ''} alt="Java Script Logo"></img>
                 </Layout>
             </div >
         )
