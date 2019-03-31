@@ -55,9 +55,11 @@ const Layout = ({ children, title }) => (
                     height: 100vh;
                 }
                 header {
-                    display: flex;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    grid-gap: 1rem;
+                    text-align: center;
                     width: 100%;
-                    justify-content: space-around;
                     padding: 1rem;
                     font-size: 1.2rem;
                     background-color: indigo;
