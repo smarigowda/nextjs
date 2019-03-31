@@ -3,7 +3,7 @@ const HireMe = () => {
     return (
         <div>
             <Layout title="Hire Me Page">
-                <p>Hire me at santosharakere@gmail.com</p>
+                <p className="my-email">santosharakere@gmail.com</p>
             </Layout>
         </div>
     )

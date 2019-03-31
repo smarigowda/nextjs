@@ -18,35 +18,19 @@ export default class About extends Component {
     static async getInitialProps() {
         const result = await fetch('https://api.github.com/users/smarigowda')
         const data = await result.json();
-        
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         return data;
-        //     });
         return { user: data }
     }
     render() {
+        const { bio,  avatar_url } = this.props.user;
         return (
             <div>
                 <Layout title="About Page">
-                    <p>JS Programmer</p>
-                    {JSON.stringify(this.props.user)}
-                    <img src="static/js-logo.png" alt="Java Script Logo"></img>
-                    {/* <img src={this.state.user ? this.state.user.avatar_url : ''} alt="Java Script Logo"></img> */}
+                    {/* <p>{JSON.stringify(this.props.user)}</p> */}
+                    <p>{ bio }</p>
+                    {/* <img src="static/js-logo.png" alt="Java Script Logo"></img> */}
+                    <img src={avatar_url ? avatar_url : ''} alt="My Avatar" className="my-avatar"></img>
                 </Layout>
             </div >
         )
     }
 }
-// const About = () => {
-//     return (
-//         <div>
-//             <Layout title="About Page">
-//                 <p>JS Programmer</p>
-//                 <img src="static/js-logo.png" alt="Java Script Logo"></img>
-//             </Layout>
-//         </div>
-//     )
-// };
-
-// export default About;

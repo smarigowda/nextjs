@@ -15,14 +15,6 @@ export default class MyDocument extends Document {
                 <body>
                     <Main />
                     <NextScript />
-                    <style jsx global>{
-                        `
-                    body {
-                        margin: 0;
-                        font-family: 'Roboto', sans-serif;
-                    }
-                    `
-                    }</style>
                 </body>
             </html>
         )

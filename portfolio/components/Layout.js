@@ -44,51 +44,6 @@ const Layout = ({ children, title }) => (
         <footer>
             &copy; {new Date().getFullYear()}
         </footer>
-        <style jsx>{
-            `
-                .container {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-direction: column;
-                    height: 100vh;
-                }
-                header {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                    grid-gap: 1rem;
-                    text-align: center;
-                    width: 100%;
-                    padding: 1rem;
-                    font-size: 1.2rem;
-                    background-color: indigo;
-                }
-                header a {
-                    color: white;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                }
-                header a:hover {
-                    color: green;
-                }
-                footer {
-                    padding: 1rem;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    background-color: lightgray;
-                }
-            `
-        }
-        </style>
-        <style jsx global>{
-            `
-            body {
-                margin: 0;
-                background-color: #f0f0f0;
-            }
-            `
-        }</style>
     </div>
 );
 

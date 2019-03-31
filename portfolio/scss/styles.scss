@@ -1,0 +1,45 @@
+.my-avatar {
+    width: 10%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: indigo;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header a:hover {
+    color: green;
+}
+footer {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+}
+.my-email {
+    font-size: 1.5rem;
+    color: indigo;
+}
