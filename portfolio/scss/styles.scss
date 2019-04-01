@@ -41,3 +41,16 @@ footer {
     font-size: 1.5rem;
     color: indigo;
 }
+
+.hook-button {
+    background-color: indigo;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    width: 10rem;
+}
+
+.hook-button:focus {
+    outline: none;
+}
