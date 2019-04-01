@@ -1,15 +1,23 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
 
+const PostLink = ({ title }) => {
+    return (
+        <li>
+            <Link href={`/post?title=${title}`}>
+                <a>{`${title}`}</a>
+            </Link>
+        </li>
+    )
+}
+
 const Blog = () => {
     return (
         <Layout title="My Blog">
             <ul>
-                <li>
-                    <Link href="/post?title=React Post">
-                        <a>React Post</a>
-                    </Link>
-                </li>
+                <PostLink title="React Post"/>
+                <PostLink title="Angular Post"/>
+                <PostLink title="VUe Post"/>
             </ul>
         </Layout>
     )
