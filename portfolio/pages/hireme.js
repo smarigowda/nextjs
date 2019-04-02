@@ -8,7 +8,7 @@ const HireMe = () => {
                 <p className="my-email">santosharakere@gmail.com</p>
                 <p>You clicked {count} times</p>
                 <button onClick={() => setCount(count + 1)} className="hook-button">
-                    Click me
+                    useState
                 </button>
             </Layout>
         </div>
